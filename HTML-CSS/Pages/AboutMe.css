@@ -33,14 +33,19 @@ body {
 }
 
 /* Main Layout */
+/* using grid-template-columns to display grid contents in 3 columns
+grid-template-columns; column1 column2 column3 
+unit size fr = fraction of the container its in */
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 20px;
     padding: 20px;
+    
+    
 }
 
-/* Sidebar */
+/* Sidebar autoscroller*/
 .sidebar {
     background: black;
     color: white;
@@ -51,8 +56,19 @@ body {
 /* Content Area */
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr; /*Column 1, img , column 2*/
     gap: 20px;
+}
+
+img{
+    background: #1a0f0f;
+    color: white;
+    padding: 20px;
+    min-height: 300px ;
+
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Content Boxes */
@@ -60,5 +76,5 @@ body {
     background: #1a0f0f;
     color: white;
     padding: 20px;
-    min-height: 180px;
+
 }
