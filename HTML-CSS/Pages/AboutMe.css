@@ -1,3 +1,4 @@
+/* Page css */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +17,7 @@ body {
     padding: 20px;
 }
 
-/* Navigation */
+/* Navigation buttones*/
 .nav {
     display: flex;
     gap: 10px;
